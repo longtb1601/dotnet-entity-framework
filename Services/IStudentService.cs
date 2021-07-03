@@ -9,6 +9,6 @@ namespace Entity_Framework.Services
         List<Student> GetAll();
         void Create(Student model);
         void Edit(int id, Student model);
-        void Delete(int id);
+        void Delete(Student model);
     }
 }

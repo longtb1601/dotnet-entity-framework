@@ -31,10 +31,8 @@ namespace Entity_Framework.Services
             _studentContext.SaveChanges();
         }
 
-        public void Delete(int id)
+        public void Delete(Student student)
         {
-            var student = _studentContext.Students.FirstOrDefault(s => s.StudentId == id);
-
             _studentContext.Remove(student);
 
             _studentContext.SaveChanges();
